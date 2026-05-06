@@ -66,10 +66,12 @@ task-manager/
 git clone https://github.com/moinshaik9/task-manager-fullstack.git
 
 # Go into project folder
-cd task-manager
+cd task-manager  
 
 # Install dependencies
 npm install
 
 # Start server
-node app.js
+node app.js  (cmd 1)
+
+start index.html (cmd 2)
