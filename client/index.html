@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <title>Task Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-<h2>Task Manager</h2>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
 
-<input type="text" id="taskInput" placeholder="Enter task">
-<button onclick="addTask()">Add</button>
+<div class="bg-white p-6 rounded-xl shadow-xl w-96">
 
-<ul id="taskList"></ul>
+  <h2 class="text-xl font-bold text-center mb-4">Task Manager</h2>
+
+  <!-- AUTH SECTION -->
+  <div id="authSection">
+
+    <input id="email" class="border p-2 w-full mb-2" placeholder="Email">
+    <input id="password" type="password" class="border p-2 w-full mb-2" placeholder="Password">
+
+    <button onclick="register()" class="bg-green-500 text-white w-full p-2 mb-2">Register</button>
+    <button onclick="login()" class="bg-blue-500 text-white w-full p-2">Login</button>
+
+    <input id="otp" class="border p-2 w-full mt-2" placeholder="Enter OTP">
+    <button onclick="verify()" class="bg-purple-500 text-white w-full p-2 mt-2">Verify OTP</button>
+
+  </div>
+
+  <!-- TASK SECTION -->
+  <div id="taskSection" class="hidden">
+
+    <div class="flex gap-2 mt-4">
+      <input id="taskInput" class="border p-2 flex-1" placeholder="Enter task">
+      <button onclick="addTask()" class="bg-blue-500 text-white px-3">Add</button>
+    </div>
+
+    <ul id="taskList" class="mt-4 space-y-2"></ul>
+
+    <button onclick="logout()" class="bg-red-500 text-white w-full mt-4 p-2">Logout</button>
+
+  </div>
+
+</div>
 
 <script src="script.js"></script>
 
