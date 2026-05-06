@@ -1,23 +1,53 @@
-# 📝 Task Manager Full Stack App
+# 🚀 Task Manager Full Stack Application
 
-## 🚀 Overview
-A full-stack task management application built using Node.js, Express, and MongoDB.
+A modern full-stack Task Manager application built using **Node.js, Express, MongoDB, and Vanilla JS** with secure authentication and OTP verification.
 
-## ✨ Features
-- Add tasks
-- View tasks
-- Mark tasks as completed
-- Delete tasks
+---
 
-## 🛠 Tech Stack
-- Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express.js
-- Database: MongoDB
+## 📌 Features
 
-## 🔄 Architecture
-User → Frontend → API → Backend → MongoDB → Response → UI
+- 🔐 User Registration with Email OTP Verification
+- 🔑 Secure Login using JWT Authentication
+- 📧 OTP Expiry & Resend Functionality
+- ✅ Create, Update, Delete Tasks
+- 🔒 Protected Routes (Only logged-in users can access tasks)
+- 💾 Persistent storage using MongoDB
+- 🎨 Clean UI using Tailwind CSS
 
-## ▶️ How to Run
-1. npm install
-2. node app.js
-3. Open client/index.html
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- HTML
+- CSS (Tailwind)
+- JavaScript
+
+**Backend:**
+- Node.js
+- Express.js
+
+**Database:**
+- MongoDB (Mongoose)
+
+**Authentication:**
+- JWT (JSON Web Token)
+- bcrypt (Password hashing)
+
+**Email Service:**
+- Nodemailer (OTP Verification)
+
+---
+
+## ⚙️ How It Works
+
+1. User registers with email & password  
+2. OTP is generated and sent to email  
+3. User verifies OTP  
+4. Login generates JWT token  
+5. Token is used to access protected APIs  
+6. User can manage tasks (CRUD operations)  
+
+---
+
+## 📂 Project Structure
