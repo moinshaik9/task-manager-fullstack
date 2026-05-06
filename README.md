@@ -51,3 +51,25 @@ A modern full-stack Task Manager application built using **Node.js, Express, Mon
 ---
 
 ## 📂 Project Structure
+
+task-manager/
+│
+├── models/ # MongoDB Schemas
+├── routes/ # API Routes
+├── client/ # Frontend files
+├── app.js # Main server file
+├── package.json
+
+## 🚀 Installation & Setup
+
+# Clone the repository
+git clone https://github.com/moinshaik9/task-manager-fullstack.git
+
+# Go into project folder
+cd task-manager
+
+# Install dependencies
+npm install
+
+# Start server
+node app.js
